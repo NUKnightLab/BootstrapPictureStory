@@ -2,7 +2,20 @@
 // Variables
 // --------------------------------------------------
 
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic"); 
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic"); 
+
+@font-face {
+  font-family: 'English Towne';
+  src: url('../fonts/EnglishTowne.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/EnglishTowne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/EnglishTowne.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/EnglishTowne.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/EnglishTowne.svg#df72338b25fb6276e2467cdc9f14d38d') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -44,6 +57,7 @@
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+@font-family-masthead:    'English Towne';
 
 @font-size-base:          18px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px

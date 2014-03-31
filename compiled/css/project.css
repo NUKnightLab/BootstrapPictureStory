@@ -1,10 +1,20 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
 /*!
 	Bootstrap Project Template
 	Bootstrap 3.0.2 
 	Designed and built by Zach Wise at VeriteCo
 
 */
+@font-face {
+  font-family: 'English Towne';
+  src: url('../fonts/EnglishTowne.eot');
+  src: url('../fonts/EnglishTowne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/EnglishTowne.woff') format('woff'), /* Modern Browsers */ url('../fonts/EnglishTowne.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/EnglishTowne.svg#df72338b25fb6276e2467cdc9f14d38d') format('svg');
+  font-style: normal;
+  font-weight: 400;
+  
+  /* IE9 Compat Modes */
+  /* Legacy iOS */
+}
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5529,6 +5539,33 @@ input[type="color"]:focus,
   -webkit-box-shadow: none;
   box-shadow: none;
   border-width: 0;
+}
+/*!
+	MASTHEAD FONT
+
+*/
+div.navbar {
+  text-align: center;
+}
+div.navbar a.masthead {
+  font-family: 'English Towne';
+  float: none;
+  font-size: 32px;
+  margin: 20px 0px 10px 0px;
+  color: #666;
+}
+div.navbar ul li {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+footer {
+  margin-top: 50px;
+}
+.story-body {
+  margin-top: 50px;
+}
+p.lead {
+  font-weight: 300;
 }
 .story-header {
   margin-top: 150px;
