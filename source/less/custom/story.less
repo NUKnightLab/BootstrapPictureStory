@@ -30,20 +30,31 @@ p.lead {
 	font-weight:300;
 }
 .story-header {
-	margin-top:150px;
-	text-align:center;
-	h1 {
-		font-size: (@font-size-base * 3);
-		text-transform: uppercase;
-		margin-bottom: 0px;
-		font-weight:700;
-		color:@gray-darker;
-		small {
-			
-		}
-	}
+	margin-top:100px;
+	//text-align:center;
+	
 	
 }
+h1 {
+	margin-top:0;
+	font-size: (@font-size-base * 3);
+	line-height:(@font-size-base * 3.5);
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight:900;
+	color:@gray-darker;
+	small {
+		display:block;
+	}
+}
+h1.extra-large {
+	font-size: (@font-size-base * 4);
+	font-weight:900;
+	small {
+		font-weight:300;
+	}
+}
+
 .byline {
 	font-size:0.8em;
 	color: @gray-light;
