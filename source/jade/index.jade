@@ -15,14 +15,20 @@ html(lang="en")
 					p.lead
 						| Paragraph text with lead class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.
 
+		section.container
+			div.row
+				div.col-md-12
+					include sections/carousel
 		// Large image in Outside Grid
 		section.full-width
-			figure
-				img.img-responsive(data-src="holder.js/1400x600/auto/#999:#7a7a7a/text:Image")
-				figcaption.credit Photographer Name
-				figcaption 
-					| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, 
-					| id pulvinar odio lorem non turpis. Nullam sit amet enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+			//include sections/carousel
+			//
+				figure
+					img.img-responsive(data-src="holder.js/1400x600/auto/#999:#7a7a7a/text:Image")
+					figcaption.credit Photographer Name
+					figcaption 
+						| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, 
+						| id pulvinar odio lorem non turpis. Nullam sit amet enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
 		// Story Body
 		section.container.story-body
