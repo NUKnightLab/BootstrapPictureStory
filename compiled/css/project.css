@@ -5579,6 +5579,31 @@ p.lead {
 .story-header {
   margin-top: 100px;
 }
+.align-right {
+  text-align: right;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-normal {
+  font-style: normal;
+}
+.figure-pull-left {
+  width: 50%;
+  float: left !important;
+  padding-right: 15px;
+}
+.figure-pull-right {
+  width: 50%;
+  float: right !important;
+  padding-left: 15px;
+}
 h1 {
   margin-top: 0;
   font-size: 51px;
@@ -5645,13 +5670,81 @@ blockquote cite:before {
   content: "— ";
   color: #999999;
 }
-figure figcaption {
+.carousel .caption,
+.carousel p.caption {
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+}
+.carousel .credit,
+.carousel p.credit {
+  text-align: right;
+  font-size: 11px;
+  color: #999;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=1);
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: 10%;
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+  right: 10%;
+}
+.carousel-caption {
+  position: relative;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #333;
+  text-align: left;
+  text-shadow: none;
+}
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4,
+.carousel-caption h5,
+.carousel-caption h6 {
+  margin-top: 0;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: auto;
+  width: 100%;
+  height: auto;
+  line-height: 1;
+}
+.img figure figcaption {
   margin-bottom: 20px;
   text-align: left;
   font-size: 12px;
   line-height: 14px;
 }
-figure figcaption.credit {
+.img figure figcaption.credit {
   text-align: right;
   color: #999999;
   margin: 1px 0px 5px 0px;
