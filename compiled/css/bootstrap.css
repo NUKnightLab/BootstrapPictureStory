@@ -5541,3 +5541,242 @@ input[type="color"]:focus,
   box-shadow: none;
   border-width: 0;
 }
+.show-grid [class*="row"] {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+.show-grid [class*="col"] {
+  background-color: #eee;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  min-height: 40px;
+  line-height: 40px;
+}
+div.navbar {
+  text-align: center;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div.navbar a.masthead {
+  font-family: 'English Towne';
+  float: none;
+  font-size: 32px;
+  margin: 20px 0px 10px 0px;
+  color: #666;
+}
+div.navbar ul li {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+footer {
+  margin-top: 50px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.story-body {
+  margin-top: 50px;
+}
+p.lead {
+  font-weight: 300;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+  margin-bottom: 20px;
+}
+h1 {
+  text-align: center;
+}
+.story-header {
+  margin-top: 100px;
+}
+.align-right {
+  text-align: right;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-normal {
+  font-style: normal;
+}
+.figure-pull-left {
+  width: 50%;
+  float: left !important;
+  padding-right: 15px;
+}
+.figure-pull-right {
+  width: 50%;
+  float: right !important;
+  padding-left: 15px;
+}
+h1 {
+  margin-top: 0;
+  font-size: 57px;
+  line-height: 66.5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 900;
+  color: #222222;
+}
+h1 small {
+  display: block;
+}
+span.dropcap {
+  float: left;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: -5px;
+  margin-right: 3px;
+  color: #333;
+  font-weight: 700;
+}
+h1.extra-large {
+  font-size: 76px;
+  font-weight: 900;
+}
+h1.extra-large small {
+  font-weight: 300;
+}
+.byline {
+  font-size: 0.8em;
+  color: #999999;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+}
+blockquote {
+  display: block;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  font-size: 33.25px;
+  margin: 20px 0px 20px 0px;
+  border: 0;
+  color: #222222;
+}
+blockquote p {
+  text-align: center;
+  margin: 0;
+}
+blockquote p:before {
+  content: "“";
+  color: #999999;
+}
+blockquote p:after {
+  content: "”";
+  color: #999999;
+}
+blockquote cite {
+  display: block;
+  font-size: 12px;
+  text-align: right;
+}
+blockquote cite:before {
+  content: "— ";
+  color: #999999;
+}
+figure figcaption,
+.carousel .caption,
+.carousel p.caption {
+  text-align: left;
+  font-size: 12px;
+  color: #666;
+  line-height: 14px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+figure figcaption.credit,
+.carousel .credit,
+.carousel p.credit {
+  text-align: right;
+  font-size: 10px;
+  line-height: 11px;
+  color: #999999;
+  margin: 1px 0px 5px 0px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.full-width figure figcaption,
+.carousel .caption,
+.carousel p.caption {
+  margin-left: 20px;
+}
+.full-width figure figcaption.credit,
+.carousel .credit,
+.carousel p.credit {
+  margin-right: 20px;
+}
+figure {
+  margin-bottom: 20px;
+}
+.carousel .caption,
+.carousel p.caption {
+  margin-left: 15px;
+}
+.carousel .carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.carousel .carousel-control.right,
+.carousel .carousel-control.left {
+  background-image: none;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF', GradientType=1);
+}
+.carousel .carousel-control.right {
+  left: auto;
+  right: 0;
+}
+.carousel .carousel-control .icon-prev,
+.carousel .carousel-control .glyphicon-chevron-left {
+  left: 10%;
+}
+.carousel .carousel-control .icon-next,
+.carousel .carousel-control .glyphicon-chevron-right {
+  right: 10%;
+}
+.carousel .carousel-caption {
+  position: relative;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #333;
+  text-align: left;
+  text-shadow: none;
+}
+.carousel .carousel-caption h1,
+.carousel .carousel-caption h2,
+.carousel .carousel-caption h3,
+.carousel .carousel-caption h4,
+.carousel .carousel-caption h5,
+.carousel .carousel-caption h6 {
+  margin-top: 0;
+}
+.carousel .carousel-inner > .item > img,
+.carousel .carousel-inner > .item > a > img {
+  display: block;
+  max-width: auto;
+  width: 100%;
+  height: auto;
+  line-height: 1;
+}
+.subnav {
+  font-size: 19px;
+}
+div.navbar.navbar-fixed-top.subnav {
+  top: 61px !important;
+}
