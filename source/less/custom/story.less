@@ -253,6 +253,40 @@ figure {
 }
 
 
-
+// Fancy Box
+.enlarge {
+	position:relative;
+	img {
+		position:relative;
+		
+	}
+	&:after {
+		opacity:0.25;
+		position: absolute;
+		font-size:24px;
+		padding:20px;
+		border-top-right-radius: 7px;
+		background-color: transparent;
+		//height:48px;
+		bottom:0px;
+		left:0px;
+		content: "\e015";
+		color:#FFF;
+		display: block;
+		font-family: 'Glyphicons Halflings';
+		font-style: normal;
+		font-weight:normal;
+		line-height: 24px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	
+}
+.enlarge:hover {
+	&:after {
+		opacity:0.85;
+		background-color:#333;
+	}
+}
 
 
