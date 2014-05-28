@@ -13,18 +13,29 @@
 	min-height: 40px;
 	line-height: 40px;
 }
+.lazyload {
+	img {
+		opacity: 0;
+		transition: opacity .3s ease-in;
+	}
+}
+
+a.masthead {
+	font-family: @font-family-masthead;
+	float:none;
+	font-size: 32px;
+	margin:20px 0px 10px 0px;
+	color:#666;
+	//padding: 10px 0px 10px 0px;
+}
+a.masthead:hover {
+	text-decoration: none;
+}
 
 div.navbar {
 	text-align:center;
 	font-family: @font-family-sans-serif;
-	a.masthead {
-		font-family: @font-family-masthead;
-		float:none;
-		font-size: 32px;
-		margin:20px 0px 10px 0px;
-		color:#666;
-		//padding: 10px 0px 10px 0px;
-	}
+	
 	ul {
 		li {
 			font-weight:300;
@@ -81,6 +92,11 @@ h1 {
 	width: 50%;
 	float: right !important;
 	padding-left:15px;
+}
+
+figure.figure-pull-right, figure.figure-pull-left  {
+	margin-top:5px;
+	margin-bottom:5px;
 }
 
 h1 {
@@ -252,8 +268,89 @@ figure {
 	}
 }
 
+.img-responsive {
+	width:100%;
+}
+
+// OVERLAY NAVBAR
+.overlay-navbar {
+	margin: 0 auto;
+	text-align:center;
+	position:absolute;
+	top:0;
+	z-index:10;
+	width:100%;
+	a.masthead {
+		display:block;
+		margin: 0 auto;
+		color:#FFF;
+		text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+	}
+	a.masthead:hover {
+		text-shadow: 1px 1px 8px rgba(0,0,0,.5);
+	}
+}
+
+figure {
+	margin-top:50px;
+	margin-bottom:50px;
+}
+.full-width {
+	figure {
+		margin-top:0;
+		
+	}
+}
+
+// TITLE ON PHOTO
+.title-on-photo {
+	top: 60%;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	position: absolute;
+	.title-on-photo-container {
+		h1 {
+			font-size: 85px;
+			line-height: 86px;
+			color: #fff;
+			text-shadow: 1px 1px 4px rgba(0,0,0,.5);
+			display:block;
+			text-align:center;
+			text-transform: none;
+			margin-bottom:5px;
+			font-weight:900;
+		}
+		
+		p.lead {
+			//font-size: 40px;
+			color:#FFF;
+			text-shadow: 1px 1px 8px rgba(0,0,0,.5);
+			margin-bottom:5px;
+			font-weight:200;
+		}
+		
+		.byline {
+			font-size: 22px;
+			color:#FFF;
+			text-shadow: 1px 1px 8px rgba(0,0,0,.5);
+			font-weight:400;
+			
+			margin-bottom:5px;
+		}
+	}
+}
+
+.full-width {
+	position: relative;
+}
 
 // Fancy Box
+.fancybox-overlay, #fancybox-thumbs {
+	img {
+		opacity:1;
+	}
+}
 .enlarge {
 	position:relative;
 	img {

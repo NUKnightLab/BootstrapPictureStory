@@ -24,8 +24,9 @@
 // @codekit-prepend "source/waypoints-sticky.js";
 
 // @codekit-prepend "source/jquery.fancybox.js"; 
-// @codekit-prepend "source/jquery.fancybox-thumbs";
+// @codekit-prepend "source/jquery.fancybox-thumbs.js";
 
+// @codekit-prepend "source/jquery.laziestloader.js";
 
 $(document).ready(function(){
 	
@@ -49,6 +50,11 @@ $(document).ready(function(){
 			}
 		}
 	});
+	
+	 
+	 $("img").laziestloader({}, function() {
+	     this.style.opacity = 1;
+	 });
 
 	
 });
