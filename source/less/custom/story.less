@@ -19,18 +19,161 @@
 		transition: opacity .3s ease-in;
 	}
 }
-
+article {
+	//margin-top:-100px;
+}
 a.masthead {
 	font-family: @font-family-masthead;
 	float:none;
 	font-size: 32px;
 	margin:20px 0px 10px 0px;
-	color:#666;
+	color:#000;
 	//padding: 10px 0px 10px 0px;
 }
 a.masthead:hover {
 	text-decoration: none;
 }
+
+// NAVBAR
+.navbar [class*="col-"] {
+	padding:0;
+}
+.navbar-default {
+	background-color: #FFF;
+	border-color: #CCC;
+}
+
+.navbar-header {
+	float:none;
+}
+
+.navbar-secondary {
+	margin-top:35px;
+	margin-bottom:0px;
+	border: 0;
+	//height:100px;
+	border-bottom: 1px solid #CCC;
+	.box-shadow( 1px 2px 8px rgba(0,0,0,.15));
+	.story-item [class*="col-"] {
+		//padding-left: 5px;
+		//padding-right: 5px;
+	}
+	.story-item, a.story-item {
+		
+		display:block;
+		position:relative;
+		//padding:5px;
+		min-height:90px;
+		border-color: #e7e7e7;
+		border-right: 1px solid #CCC;
+		overflow:hidden;
+		//margin:5px;
+		text-align:left;
+		
+		
+		
+		height:90px;
+		.story-item-background {
+			z-index:0;
+			position:absolute;
+			top:0;
+			left:0;
+			height:90px;
+			width:100%;
+			opacity: .15;
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			filter: grayscale(100%);
+			transition: all .3s ease-in;
+			//background-image:url('../photos/driving_force/drivingforce_3439.jpg');
+			background-size:cover;
+			background-position:center center;
+		}
+		.story-item-container {
+			z-index:1;
+			//display:table;
+			position:absolute;
+			top:0;
+			left:0;
+			height: 90px;
+			width: 100%;
+			padding-left:5px;
+			padding-right:5px;
+			padding:5px;
+			.story-item-content {
+				//display: table-cell;
+				vertical-align: middle;
+				width: 100%;
+			}
+		}
+		
+		h3 {
+			font-size:14px;
+			
+			margin:0;
+			margin-left:5px;
+			font-weight:700;
+			//color:#FFF;
+			color:#666;
+			text-transform: uppercase;
+			//transition: all .3s ease-in;
+		}
+		p, p.byline {
+			font-size:12px;
+			line-height:14px;
+			margin:0;
+			margin-left:5px;
+			margin-top:0px;
+			color:#CCC;
+			//transition: all .3s ease-in;
+		}
+		p.byline {
+			margin-top:5px;
+			//text-transform: uppercase;
+		}
+		img {
+			//margin-left:5px;
+			//margin-right:5px;
+			//width:auto; 
+			border-radius:3px;
+			max-width:100%;
+			
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			filter: grayscale(100%);
+			transition: all .2s ease-in;
+		}
+	}
+	.story-item:hover, a.story-item:hover {
+		//text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+		text-decoration:none;
+		.story-item-background {
+			opacity: 1;
+			-webkit-filter: grayscale(0);
+			-moz-filter: grayscale(0);
+			filter: grayscale(0);
+		}
+		h3, p {
+			text-decoration:none;
+			//color:#FFF;
+			//font-size:20px;
+			//opacity:0;
+			color:#000;
+		}
+		p {
+			//color:#999;
+		}
+		img {
+			opacity: 1;
+			-webkit-filter: grayscale(0);
+			-moz-filter: grayscale(0);
+			filter: grayscale(0);
+		}
+		
+	}
+}
+
+
 
 div.navbar {
 	text-align:center;
@@ -42,6 +185,43 @@ div.navbar {
 			text-transform: uppercase; 
 		}
 	}
+}
+.navbar-secondary {
+	.col-sm-1 {
+		.story-item, a.story-item {
+			p {
+				display:none;
+			}
+			p.byline {
+				display:block;
+			}
+		}
+	}
+}
+
+.story-nav {
+	.story-header {
+		margin-top: 0px;
+	}
+	a.masthead {
+
+		font-size: 24px;
+
+	}
+	.navbar {
+		min-height: 24px;
+	}
+}
+.story-header {
+	margin-top: 0px;
+}
+a.masthead {
+
+	font-size: 24px;
+
+}
+.navbar {
+	min-height: 24px;
 }
 footer {
 	margin-top:50px;
